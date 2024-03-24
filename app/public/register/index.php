@@ -52,7 +52,7 @@ if (false === empty($_POST) && isset($_POST['submit'])) {
             </div>
             
             <div class="row<?php if (true === isset($errors['password'])) : ?> error<?php endif; ?>">
-                <label for="password">Password <span class="note">10 - 50 characters<span></label>
+                <label for="password">Password <span class="note">10 - 100 characters<span></label>
                 <input type="password" id="password" name="password">
             </div>
 
