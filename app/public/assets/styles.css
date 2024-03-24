@@ -1,0 +1,183 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Helvetica, Calibri, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a {
+    color: #005cb3;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.centered {
+    text-align: center;
+}
+
+.wrapper {
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+    .wrapper.narrow {
+        max-width: 400px;
+    }
+
+.paper {
+    background-color: #fefefe;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 40px;
+    position: relative;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+input, input::file-selector-button {
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em;
+    padding:8px;
+    width: 100%;
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid #aaa;
+}
+
+input[type=submit] {
+    background-color: #005cb3;
+    border: none;
+    color: #eee;
+    padding: 10px;
+}
+
+input::file-selector-button {
+    border: none;
+}
+
+form {
+    margin-bottom: 0;
+}
+
+    form .row {
+        padding-bottom:20px;
+    }
+
+        form .row.error {
+            color: #cc0000;
+        }
+
+    form label .note {
+        color: #666;
+        display: block;
+        font-size: 0.75em;
+        padding-top:5px;
+    }
+
+.message {
+    border-radius: 3px;
+    font-weight: 0.8em;
+    margin-bottom: 20px;
+    padding:10px 10px 0;
+}
+
+    .message.natural-width {
+        display: inline-block;
+    }
+
+    .message.error {
+        background: #ffb3b3;
+        color: #cc0000;
+    }
+
+    .message.success {
+        background: #b3ffb5;
+        color: #006600;
+    }
+
+    .message span {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+.login .additional {
+    font-style: italic;
+    text-align: center;
+}
+
+    .login .additional p {
+        color: #555;
+        margin-bottom: 0;
+    }
+
+.account {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.files-list {
+    overflow: auto;
+    padding-bottom:20px;
+}
+
+    .files-list .file {
+        float:left;
+        margin: 0 20px 20px 0;
+        width: 100px;
+    }
+
+        .files-list .file .file-icon {
+            display: block;
+            margin: auto;
+        }
+
+        .files-list .file .name {
+            padding-top: 10px;
+            overflow: hidden;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+.files form label, .files form input[type=file] {
+    display: inline;
+    width: auto;
+}
+
+    .files form label {
+        padding-right: 10px;
+    }
+
+    .files form input[type=file] {
+        color: #666;
+        font-style: italic;
+        padding-left: 0;
+    }
+
+    .files form input::file-selector-button {
+        margin-right: 12px;
+        max-width: 150px;
+    }
+
+    .files form input[type=submit] {
+        max-width: 150px;
+    }

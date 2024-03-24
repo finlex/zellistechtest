@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  webserver:
+    image: iristechtest/webserver
+    build:
+      context: ../
+      dockerfile: ./docker/webserver.Dockerfile
+    ports:
+      - "80:80"
+      
+  php:
+    image: iristechtest/php
+    build:
+      context: ../
+      dockerfile: ./docker/php.Dockerfile
